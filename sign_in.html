@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Say My name!!ㅁㄷㄱㄷ--회원가입</title>
+
+	<style type="text/css">
+		#page {
+			width: 1500px;
+			height: 1300px;
+			margin: 0 auto;
+			border: solid 0px red;
+			background-color:#ffde00
+		}
+
+		header{
+		width: 800px;
+		height: 200px;
+		margin: 0 auto;
+		border: solid 0px red;
+		text-align: center;
+		}
+
+		body{
+		margin: 0 auto;
+		background-color: white;
+		/*background-repeat: no-repeat;
+		background-attachment: fixed;
+		background-position: center;*/
+		}
+
+		#main_contents{
+		width: 550px;
+		height: 900px;
+		margin: 0 auto;
+		margin-top: 10px;
+		border: solid 0px green;
+		background-color: white;
+		}
+
+		#sign_in{
+		margin: 0 auto;
+		text-align: center;
+		width: 450px;
+		height: 600px;
+		}
+
+		textarea{
+			resize: none;
+		}
+
+		footer{
+			text-align: center;
+		}
+		.btn{
+			border:none;
+			background-color: white;
+
+		}
+		table{
+			background-color: white;
+		}
+		.line_2{
+			float: left;
+			font-size: 20px;
+		}
+		.small_red{
+			font-size: 15px;
+			color: red;
+		}
+		.small_gray{
+			font-size: 15px;
+			color: gray;
+		}
+
+	</style>
+</head>
+<body>
+
+<div id="page">
+
+<header>
+	<a href='index.html'><img src='imgg/footer_logo.png' height="200" ></a>
+</header>
+
+<div id="main_contents">
+	<table id="sign_in" border="0">
+		<tr>
+			<td colspan="2"><img src='imgg/sign_in.png' height="60" > </td>
+		</tr>
+		<tr>
+			<td colspan="2"><span class="line_2"><input type="checkbox">머독방송 이용약관 동의<span class="small_red">(필수)</span></span></td>
+		</tr>
+
+		<tr>
+			<td colspan="2"><textarea cols="50" rows="4" disabled>머독방송은 회원님의 즐거운 시청을 위해 다음과 같은 서비스를 제공하고 있습니다. 머독방송은 기본적으로 방송시간알림, 각종 이벤트, 시청자 참여 이벤트, 머독굿즈, 머독 사진게시판을 통해 다양한 서비스를 제공하고있습니다. 이와 같은 서비스를 참여하기위해선 시청자님의 동의가 필요합니다.</textarea></td>
+		</tr>
+
+		<tr>
+			<td colspan="2">&nbsp;</td>
+		</tr>
+
+		<tr>
+			<td colspan="2"><span class="line_2"><input type="checkbox">개인정보 수집 및 이용에 대한 안내<span class="small_red">(필수)</span></span></td>
+		</tr>
+
+		<tr>
+			<td colspan="2"><textarea cols="50" rows="4" disabled>정보통신망법 규정에 따라 네이버에 회원가입 신청하시는 분께 수집하는 개인정보의 항목, 개인정보의 수집 및 이용목적, 개인정보의 보유 및 이용기간을 안내 드리오니 자세히 읽은 후 동의하여 주시기 바랍니다.
+
+			이용자는 회원가입을 하지 않아도 정보 검색, 뉴스 보기 등 대부분의 머독방송 서비스를 회원과 동일하게 이용할 수 있습니다. 이용자가 메일, 방송일정, 머독사진게시판, 이벤트참여 등과 같이 개인화 혹은 회원제 서비스를 이용하기 위해 회원가입을 할 경우, 머독방송은 서비스 이용을 위해 필요한 최소한의 개인정보를 수집합니다.</textarea></td>
+		</tr>
+
+		<tr>
+			<td colspan="2">&nbsp;</td>
+		</tr>
+
+		<tr>
+			<td colspan="2"><span class="line_2"><input type="checkbox">위치정보 이용약관 동의<span class="small_gray">(선택)</span></span></td>
+		</tr>
+
+		<tr>
+			<td colspan="2"><textarea cols="50" rows="4" disabled>위치정보 이용약관에 동의하시면, 위치를 활용한 광고 정부 수신 등을 포함한 머독방송 이벤트 당첨 알림등 각종 알림서비스를 이용하실 수 있습니다.
+			이 약관은 머독방송 (이하 “회사”)가 제공하는 위치정보사업 또는 위치기반서비스사업과 관련하여 회사와 개인위치정보주체와의 권리, 의무 및 책임사항, 기타 필요한 사항을 규정함을 목적으로 합니다.</textarea></td>
+		</tr>
+
+		<tr>
+			<td colspan="2">&nbsp;</td>
+		</tr>
+
+		<tr>
+			<td colspan="2"><span class="line_2"><input type="checkbox">이벤트 등 프로모션 알림 수신<span class="small_gray">(선택)</span></span>
+			</td>
+		</tr>
+
+		<tr>
+			<td colspan="2">&nbsp;</td>
+		</tr>
+
+		<tr> 
+			<td><button class="btn" id = "not_agree" type="submit" onclick="location.href='index.html'"><img src="imgg/not_agree.png" height="50"></button></td>
+			<td><button class="btn" id = "agree" type="submit" onclick="location.href='sign_in2.html'"><img src="imgg/agree.png" height="50"></button></td>
+		</tr>
+	</table>
+
+	<footer>
+		<br>
+		이용약관 | <strong>개인정보처리방침</strong> | 책임의 한계와 법적고지 | 회원정보 고객센터<br><br>© Murdoc Corp
+	</footer>
+
+
+</div>
+</div>
+</body>
+</html>

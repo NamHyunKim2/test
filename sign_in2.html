@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Say My name!!ㅁㄷㄱㄷ--개인정보입력</title>
+    <style type="text/css">
+        
+        body{
+        margin: 0 auto;
+        background-color: white;
+        }
+
+        #page {
+        width: 1500px;
+        height: 1500px;
+        margin: 0 auto;
+        border: solid 0px red;
+        background-color:#ffde00
+        }
+
+        #main_contents{
+        width: 550px;
+        height: 1100px;
+        margin: 0 auto;
+        margin-top: 10px;
+        border: solid 0px green;
+        background-color: white;
+        }
+
+        header{
+        width: 800px;
+        height: 200px;
+        margin: 0 auto;
+        border: solid 0px red;
+        text-align: center;
+        }
+
+        footer{
+            text-align: center;
+        }
+        table{
+            background-color: white;
+        }
+        .text{
+            width: 500px;
+            height: 40px;
+            font-size: 18px;
+        }
+        .infor{
+            font-size: 20px;
+            float: left;
+            font-weight: bold;
+        }
+        #gray{
+            color: gray;
+            font-size: 15px;
+        }
+        .born{
+            width: 160px;
+            height: 40px;
+            font-size: 18px;
+        }
+        .select{
+            width: 503px;
+            height: 45px;
+            font-size: 17px;
+        }
+        .phone{
+            width: 320px;
+            height: 40px;
+            font-size: 18px;
+        }
+        #inz{
+            width: 173px;
+            height: 46px;
+            font-size: 18px;
+            border: none;
+            background-color: white;
+        }
+        #born_year{
+            width: 160px;
+            height: 47px;
+            font-size: 18px;
+        }
+        #sign_final{
+            width: 350px;
+            height: 60px;
+            font-size: 20px;
+            background-color: white;
+            border:none;
+        }
+        #sign_in2{
+        margin: 0 auto;
+        text-align: center;
+        width: 450px;
+        height: 600px;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="page">
+
+    <header>
+    <a href='index.html'><img src='imgg/footer_logo.png' height="150" ></a>
+    </header>
+
+    <div id="main_contents">
+
+    <table id="sign_in2" border="0">
+
+        <tr>
+            <td colspan="3"><img src="imgg/inf_save.png" height="60"></td>
+        <tr>
+            <td colspan="3"><span class="infor">아이디</span></td>
+        </tr>
+
+        <tr>
+            <td colspan="3"><input type="text" class="text" ></td>
+        </tr>
+
+
+        <tr>
+            <td colspan="3"><span class="infor">비밀번호</span></td>
+        </tr>
+
+        <tr>
+            <td colspan="3"><input type="password" class="text"></td>
+        </tr>
+
+
+        <tr>
+            <td colspan="3"><span class="infor">비밀번호 재확인</span></td>
+        </tr>
+
+        <tr>
+            <td colspan="3"><input type="password" class="text"></td>
+        </tr>
+
+
+        <tr>
+            <td colspan="3"><span class="infor">이름</span></td>
+        </tr>
+
+        <tr>
+            <td colspan="3"><input type="text" class="text"></td>
+        </tr>
+
+
+        <tr>
+            <td colspan="3"><span class="infor">생년월일</span></td>
+        </tr>
+
+        <tr>
+            <td><input type="text" class="born" placeholder="년(4자)"></td>
+            <td><select id="born_year">
+                <option>월</option>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+                <option>6</option>
+                <option>7</option>
+                <option>8</option>
+                <option>9</option>
+                <option>10</option>
+                <option>11</option>
+                <option>12</option>
+            </select>
+            </td>
+            <td><input type="text"class="born" placeholder="일"></td>
+        </tr>
+
+        
+        <tr>
+            <td colspan="3"><span class="infor">성별</span></td>
+        </tr>
+
+
+        <tr>
+            <td colspan="3"><select class="select">
+                <option>성별</option>
+                <option>여성</option>
+                <option>남성</option>
+            </select>
+        </td>
+    </tr>
+
+
+    <tr>
+        <td colspan="3"><span class="infor">본인 확인 이메일<span id="gray">(선택)</span></span></td>
+    </tr>
+
+    <tr>
+        <td colspan="3"><input type="text" class="text" placeholder="선택입력"></td>
+    </tr>
+
+
+    <tr>
+        <td colspan="3"><span class="infor">휴대전화</span></td>
+    </tr>
+
+    <tr>
+        <td colspan="3"><select class="select">
+            <option>대한민국 +82</option>
+            <option>일본 +81</option>
+            <option>중국 +86</option>
+            <option>미국/캐나다 +1</option>
+        </select>
+        </td>
+    </tr>
+
+    <tr>
+        <td colspan="2"><input type="text" class="phone" placeholder="전화번호 입력"></td>
+        <td><button id="inz"><img src="imgg/inz_number.png" height="46"></button></td>
+    </tr>
+
+    <tr>
+        <td colspan="3"><input type="text" class="text" placeholder="인증번호 입력하세요"></td>
+    </tr>
+
+    <tr>
+        <td colspan="3">&nbsp;</td>
+    </tr>
+
+
+    <tr>
+        <td colspan="3"><button id="sign_final" type="submit" onclick="location.href='index.html'"><img src="imgg/sign_final.png" height="60"></button></td>
+    </tr>
+
+</table>
+
+<footer>
+        <br>
+        이용약관 | <strong>개인정보처리방침</strong> | 책임의 한계와 법적고지 | 회원정보 고객센터<br><br>© Murdoc Corp
+    </footer>
+</body>
+</html>
